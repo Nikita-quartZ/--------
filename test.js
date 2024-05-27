@@ -36,7 +36,7 @@ class Api
 		let result = template;
 
     // Итерирование ключей обьекта
-		for (let key in object) {
+		for (const key in object) {
       // Заменяем в шаблоне места для вставки данных на значения из обьекта
       result = result.replace(`%${key}%`, object[key]);
     }
